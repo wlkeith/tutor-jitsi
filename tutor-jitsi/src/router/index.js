@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/Home.vue'
-import Groups from '@/components/Groups.vue'
+import Challenges from '@/components/Challenges.vue'
 import Projects from '@/components/Projects.vue'
+import Groups from '@/components/Groups.vue'
+
 
 Vue.use(VueRouter)
 
@@ -21,14 +23,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
+    path: '/challenges',
+    name: 'Challenges',
+    component: Challenges
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: Projects
+  },
+  {
     path: '/groups',
     name: 'Groups',
     component: Groups
-  },
-  {
-    path: '/Projects',
-    name: 'Projects',
-    component: Projects
   }
 ]
 

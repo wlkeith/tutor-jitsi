@@ -1,35 +1,43 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/groups">Groups</router-link> |
-      <router-link to="/projects">Projects</router-link>
+    <v-app>
+      <v-app-bar app dense>
+        <v-app-bar-nav-icon @click="toggle= !toggle"></v-app-bar-nav-icon>
+        <v-toolbar-title>DevLodge</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+            <v-btn text to="/">Home</v-btn>
+            <v-btn text to="/projects">Projects</v-btn>
+            <v-btn text to="/groups">Groups</v-btn>
+            <v-btn text to="/challenges">Challenges</v-btn>
+        </v-toolbar-items>
+      </v-app-bar>
+      <!-- <v-navigation-drawer app v-model="toggle">
+        
+    
+      </v-navigation-drawer> -->
+      <v-main>
 
-    </div>
-    <router-view/>
-  </div>
+      <v-container fluid>
+
+        <router-view to="/">Home</router-view>
+        
+      </v-container>
+      </v-main>
+
+    </v-app>
+
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-}
+export default {
+  name: 'App',
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  components: {
+  },
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
