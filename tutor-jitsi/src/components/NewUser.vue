@@ -1,13 +1,14 @@
 <template>
-  <div class="groups">
-    <h3>Groups</h3>
+  <div>
+    <h3>Make an account</h3>
+    
   </div>
 </template>
 
 
 <script>
 export default {
-  name: 'Groups',
+  name: 'NewUser',
   props: {
   }
 }
@@ -16,8 +17,6 @@ export default {
 
 
 <style>
-.groups {
 
-}
 
 </style>

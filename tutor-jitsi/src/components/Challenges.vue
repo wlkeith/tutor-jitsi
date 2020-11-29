@@ -1,13 +1,13 @@
 <template>
-  <div class="groups">
-    <h3>Groups</h3>
+  <div class="challenges">
+    <h3>Challenges</h3>
   </div>
 </template>
 
 
 <script>
 export default {
-  name: 'Groups',
+  name: 'Challenges',
   props: {
   }
 }

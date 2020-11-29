@@ -9,6 +9,8 @@
             <v-btn text to="/projects">Projects</v-btn>
             <v-btn text to="/groups">Groups</v-btn>
             <v-btn text to="/challenges">Challenges</v-btn>
+            <v-btn text to="/login"><font-awesome-icon class="login" icon="user-circle" size="lg"/></v-btn>
+            
         </v-toolbar-items>
       </v-app-bar>
       <!-- <v-navigation-drawer app v-model="toggle">
@@ -41,3 +43,9 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.login {
+  margin-top: .10em;
+}
+</style>

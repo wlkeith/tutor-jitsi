@@ -2,9 +2,10 @@
   <div class="home">
     <v-row>
       <v-col>
-      <v-list >You've made it to the DevLodge</v-list>
+      <v-list >You've arrived at the DevLodge</v-list>
       <v-list>Looking to work with other developers? We can help!</v-list>
-      <v-btn>Get Started</v-btn>
+      <router-link :to="{name: 'NewUser'}"><v-btn>Get Started</v-btn></router-link>
+      <!-- <router-link :to="/create-account" tag="button">Get Started></router-link> -->
       </v-col>
     </v-row>
     <v-spacer class="space"></v-spacer>

@@ -4,7 +4,8 @@ import Home from '@/components/Home.vue'
 import Challenges from '@/components/Challenges.vue'
 import Projects from '@/components/Projects.vue'
 import Groups from '@/components/Groups.vue'
-
+import Login from '@/components/Login.vue'
+import NewUser from '@/components/NewUser.vue'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,16 @@ const routes = [
     path: '/groups',
     name: 'Groups',
     component: Groups
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/create-account',
+    name: 'NewUser',
+    component: NewUser
   }
 ]
 

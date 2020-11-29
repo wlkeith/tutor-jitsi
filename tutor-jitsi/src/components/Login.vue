@@ -1,6 +1,7 @@
 <template>
-  <div class="groups">
-    <h3>Groups</h3>
+  <div class="login">
+    <h3>Login to DevLodge</h3>
+    
   </div>
 </template>
 
@@ -16,8 +17,8 @@ export default {
 
 
 <style>
-.groups {
-
+.login {
+    text-align: center;
 }
 
 </style>
